@@ -1,0 +1,24 @@
+1) Desine the mobile responsive layout
+2) Donate pop button is not working 
+
+
+To run a Vite development project on a mobile device, you can follow these steps:
+
+**Step 1: Run the application locally**
+==>npm run dev
+
+**Step 2: Find the local IP address**
+==>ipconfig
+Look for the IPv4 Address (e.g., 192.168.1.5).
+
+**Step 3: Open the app on your mobile device**
+http://<your-local-ip>:3000
+
+**Step 4: Configure Vite**
+==>export default {
+  server: {
+    host: true, // Allows access from other devices
+  },
+};
+
+**Step 5: Restart the Vite Server: After making changes to the configuration, restart the Vite server to apply the changes.
