@@ -2,10 +2,12 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaRegUserCircle } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import { toggleStatusTab } from "../../redux/cartSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+    const user = useSelector((state)=>state.user.user);
+    console.log('user', user)
     const dispatch = useDispatch();
 
     const handleOpenTabCart = async () => {
@@ -27,7 +29,7 @@ const Header = () => {
                         <img src="" alt="" />
                         <FaRegUserCircle size={30} />
                         <div className="px-3">
-                            <p className="font-bold text-sm">PRASHANT SHUKLA</p>
+                            <p className="font-bold text-sm"> {user?.name || "PRASHANT SHUKLA"}</p>
 
                             <div className="flex items-center">
                                 <p className="font-bold text-sm">Fundraiser

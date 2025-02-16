@@ -1,5 +1,8 @@
 1) Desine the mobile responsive layout
 2) Donate pop button is not working 
+3) add payment gatways 
+4) add transation history
+
 
 
 To run a Vite development project on a mobile device, you can follow these steps:
